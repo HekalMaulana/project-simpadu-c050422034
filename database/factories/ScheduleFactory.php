@@ -17,10 +17,14 @@ class ScheduleFactory extends Factory
     public function definition(): array
     {
         return [
-            'student_id' => 2,
             'subject_id' => 5,
-            'schedule_date' => fake()->dateTime(),
-            'schedule_type' => 'online',
+            'hari' => 'senin',
+            'jam_mulai' => fake()->dateTime(),
+            'jam_selesai' => fake()->dateTime(),
+            'ruangan' => 'Gedung H',
+            'kode_absensi' => fake()->randomNumber(),
+            'tahun_akademik' => '2022/2023',
+            'semester'=>'ganjil',
         ];
     }
 }
